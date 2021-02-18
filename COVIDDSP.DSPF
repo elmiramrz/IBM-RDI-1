@@ -1,0 +1,64 @@
+000001210203     A          R RISKFACTOR
+000002210203     A                                  2  3USER
+000004210203     A                                  2 69DATE
+000005210203     A                                      EDTCDE(Y)
+000006210203     A            BIRTHDATE       L  B  6 18
+000007210203     A  60                                  DSPATR(PR)
+000008210203     A                                  2 20'C O V I D 1 9   R I S K   F A C T -
+000009210203     A                                      O R S       '
+000010210203     A                                  4  3'ELMIRA MIRZA     '
+000011210203     A                                      DSPATR(RI)
+000012210203     A                                  6  5'Birth Date:'
+000013210203     A                                  8  5'Answer the following with Y or N:'
+000014210203     A                                 10  5'Cardiovascular Disease :'
+000015210203     A                                 13  5'Respiratory Disease:'
+000016210203     A                                  6 36'Gender:'
+000017210203     A                                 10 50'Diabetes:'
+000018210203     A                                 13 49'High Blood Pressure:    '
+000019210203     A            GENDER         1   B  6 44
+000020210203     A                                      VALUES('M' 'F')
+000021210203     A  95                                  DSPATR(RI PC)
+000022210203     A  60                                  DSPATR(PR)
+000023210203     A  95                              6 53'Gender Must Not be Blank'
+000024210203     A            CVDISEASE      1   B 10 32
+000025210203     A                                      VALUES('Y' 'N')
+000026210203     A  96                                  DSPATR(RI PC)
+000027210203     A  60                                  DSPATR(PR)
+000028210203     A            RSPDISEASE     1   B 13 32VALUES('Y' 'N')
+000029210203     A  97                                  DSPATR(RI PC)
+000030210203     A  60                                  DSPATR(PR)
+000031210203     A  96                             11  5'Cardiovascular Must Not be Blank'
+000032210203     A  97                             14  5'Respiratory Must Not be Blank'
+000033210203     A            DIABETES       1   B 10 63VALUES('Y' 'N')
+000034210203     A  98                                  DSPATR(RI PC)
+000035210203     A  60                                  DSPATR(PR)
+000036210203     A  98                             11 50'Diabetes Must Not be Blank'
+000037210203     A  99                             14 42'High Blood Pressure Must Not be Bl-
+000038210203     A                                      ank'
+000039210203     A            HBPRESSURE     1   B 13 75VALUES('Y' 'N')
+000040210203     A  99                                  DSPATR(RI PC)
+000041210203     A  60                                  DSPATR(PR)
+000042210203     A                                  6 47'M/F'
+000043210203     A          R RISKASSMNT                OVERLAY
+000044210203     A                                      CF03(03 'Exit Program')
+000045210207     A                                      CF01(01 'Cohort Information')
+000046210203     A                                 16 28'R I S K   A S S E S S E M E N T '
+000047210203     A                                 18  5'Age'
+000048210203     A                                 18 13'Fatality Rate'
+000049210203     A                                 18 32'Vacination Recomendation'
+000050210203     A                                 18 64'Total Queries:'
+000051210203     A                                 20 32'Cohort:'
+000055210204     A            AGE            3  0O 20  5EDTCDE(1)
+000056210204     A            FRATE          5  3O 20 15EDTCDE(1)
+000058210204     A            TOTALQ         3Y 0O 20 68EDTCDE(1)
+000059210203     A            COHORT         9   O 20 40DSPATR(RI)
+000060210203     A                                 20 24'% '
+000061210203     A                                 22 18'F1 - Cohort Information'
+000062210203     A                                 22 48'F3 - Exit'
+000063210203
+000100      
+000101210203     A*%%RS+<record-sequences>
+000102210203     A*%%RS+ <sequence name="Untitled">
+000103210203     A*%%RS+  <device type="display" width="80" height="24" />
+000104210203     A*%%RS+ </sequence>
+000105210203     A*%%RS </record-sequences>
